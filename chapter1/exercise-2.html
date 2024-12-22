@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αίτηση Συμμετοχής</title>
+</head>
+<body>
+    <h1>Αίτηση Συμμετοχής</h1>
+
+    <form>
+        <h2>Προσωπικά Στοιχεία</h2>
+        <div>
+            <label for="firstname">Όνομα:</label>
+            <input type="text" id="firstname" name="firstname">
+            <label for="lastname">Επώνυμο:</label>
+            <input type="text" id="lastname" name="lastname">
+            <label for="namefather">Πατρώνυμο:</label>
+            <input type="text" id="namefather" name="namefather">
+        </div>
+
+        <h2>Στοιχεία Κατοικίας</h2>
+        <div>
+            <label for="adress">Διεύθυνση Κατοικίας:</label>
+            <input type="text" id="adress" name="adress">
+            <label for="number">Αριθμός:</label>
+            <input type="text" id="number" name="number">
+            <label for="postalcode">Τ.Κ.:</label>
+            <input type="text" id="postalcode" name="postalcode" pattern="[0-9]{5}">
+        </div>
+        
+        <h2>Στοιχεία Επικοινωνίας</h2>
+        <div>
+            <label for="telephone">Τηλέφωνο:</label>
+            <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{10}">
+            <label for="mobile">Αριθμός:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}">
+        </div>
+    </form>
+</body>
+</html>

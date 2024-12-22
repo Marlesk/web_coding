@@ -1,0 +1,50 @@
+
+
+.head-cv {
+    text-align: center;
+}
+
+.per-info {
+    border: 2px solid blue;
+    padding: 5px;
+    padding-bottom: 25px;
+    
+}
+
+.first {
+    color:white;
+    background-color: blue;
+    padding: 0 5px; 
+    margin: -15px -7px 0px -7px;
+}
+
+.info {
+    display: inline; 
+}
+
+.alignright {
+    padding-left: 100px;
+    display: inline; 
+}
+
+.alignright1 {
+    padding-left: 45px;
+    display: inline;   
+}
+
+.alignright2 {
+    padding-left: 85px;
+    display: inline;   
+}
+
+.alignright3 {
+    padding-left: 260px;  
+}
+
+img {
+    float: right;
+}
+
+.bold {
+    font-weight: bold;
+}

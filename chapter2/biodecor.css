@@ -1,0 +1,22 @@
+.name {
+    color:rgb(58, 58, 148);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid gray;
+}
+
+.parag {
+    color: rgb(177, 175, 175);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info {
+    border: 5px solid purple;
+    background-color: rgb(238, 234, 238);
+    width: 300px;
+}
+
+.highlight {
+    color: red;
+}
+
+

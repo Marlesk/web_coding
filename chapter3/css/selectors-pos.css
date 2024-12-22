@@ -1,0 +1,29 @@
+img {
+    width: 800px;
+    height: auto;
+}
+
+ul>li {
+    border: 1px solid black;
+}
+
+ul a:link{
+    color: black;
+}
+
+ul>li:first-child {
+    color: rgb(76,0,255);
+}
+
+ul>:not(:first-child) {
+    color: green;
+}
+
+img + p {
+    font-size: 22px;
+}
+
+img ~ p {
+    background-color: aqua;
+}
+

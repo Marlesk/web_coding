@@ -1,0 +1,170 @@
+:root {
+    --full-width: 45vw;
+    --full-height: 100vh;
+    --partial-width: 40vw;
+    --color-light: rgb(213,211,211);
+    --color-white: rgb(255,255,255); 
+    --min-height-85vh: 85vh;
+    --min-height-60px: 60px;
+    --min-height-48px: 48px;
+    --color-bluelight: #3176B1;
+    --color-blueauth: #5479A2;
+    --color-gray: rgb(205,202,202,0.5);
+    --color-bluelink: rgb(42,100,163);
+    --font-weight600: 600;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: var(--full-height);
+    background-color: var(--color-light);
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.dflex-sb-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.full-width {
+    width: var(--full-width);
+}
+
+.min-height85 {
+    min-height: var(--min-height-85vh);
+}
+
+.login-gov {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px -3px black;  
+    padding-bottom: 10px;
+}
+
+.auth-text {
+    background-color: var(--color-blueauth);
+    padding: 10px; 
+    border-top: 1px solid --color-gray;
+    border-bottom: 1px solid --color-gray;
+    min-height: var(--min-height-48px);
+    font-size: x-large; 
+    color: white;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.align-center {
+    text-align: center;
+} 
+
+
+.font-sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.xlg-text {
+    font-size: x-large;
+}
+
+.m-top {
+    margin-top: 15px;
+} 
+
+.line {
+    /* display: block; 
+    height: 1px;
+    border: 0; */
+    border-top: 1px solid var(--color-gray);
+    margin-top: 25px;
+    margin-left: 15px;
+} 
+
+.min-height48 {
+    min-height: var(--min-height-48px);
+} 
+
+.lg-text {
+    font-size: large;
+}
+
+.font-strong {
+    font-weight: var(--font-weight600);
+}
+
+.item-large {
+   width: 300px;
+   height: 35px;
+   background-color: rgba(0, 0, 255, 0.089);
+   border-radius: 5px;
+   border: 1px solid var(--color-light);
+   box-shadow: 1px 0px var(--color-light); 
+}
+
+.no-outline {
+    outline: none;
+}
+
+.color-bluelight {
+    background-color: var(--color-bluelight);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.no-border {
+    border: none;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+a:visited {
+    color: var(--color-bluelink);
+}
+
+a:hover {
+    color: var(--color-bluelink);
+}
+
+/* .login-gov {
+    width: 540px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px -3px #000;         
+} */
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+  */
+
+

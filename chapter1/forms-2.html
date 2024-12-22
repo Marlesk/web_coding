@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width:450px">
+            <legend>FirstName/LastName</legend>
+        <div>
+           <label for="firstname">FistName</label>
+           <input type="text" id="firstname" name="firstname">
+        </div>
+        <div>
+            <label for="lastname">LastaName</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        </fieldset>
+        <div>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Feale</label>
+        </div>
+        <div>
+            <legend>Status</legend>
+            <input type="checkbox" id="married" name="status" value="Married">
+            <label for="married">Married</label>
+            <input type="checkbox" id="nomarried" name="status" value="No-Married">
+            <label for="nomarried">No-Married</label>
+        </div>
+        <div>
+            <label for="level">Education</label>
+            <select name="level" id="level">
+                <option value="" disapled selected hidden>Choose your Education</option>
+                <option value="1">MSc</option>
+                <option value="2">BCs</option>
+                <option value="3">PhD</option>
+            </select>
+        <div>
+          <label for="date">Submission Date</label>
+          <input type="text" id="date" placeholder="DD-MM-YYYY">
+        </div>
+        </div>
+        <div><input type="submit" value="Submit"></div>
+        <input type="date">
+        <input type="submit"/>
+            
+
+    </form>
+</body>
+</html>

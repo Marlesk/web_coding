@@ -1,0 +1,13 @@
+body {
+    background-color: gray; 
+}
+
+p, li {
+    background-color: pink;
+    color: white;
+}
+
+li {
+   list-style: square;
+}
+   

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Σύνδεση - OAuth2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Σύνδεση στο σύστημα</h1>
+        <form action="#" method="post" class="login-form">
+            <label for="username">Όνομα χρήστη:</label>
+            <input type="text" id="username" name="username" placeholder="Εισάγετε το όνομα χρήστη" required>
+
+            <label for="password">Κωδικός:</label>
+            <input type="password" id="password" name="password" placeholder="Εισάγετε τον κωδικό" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Αποθήκευση στοιχείων σύνδεσης</label>
+            </div>
+
+            <button type="submit" class="btn-login">Σύνδεση</button>
+        </form>
+        <div class="footer">
+            <a href="#">Ξέχασα τον κωδικό μου</a>
+            <p>Ή</p>
+            <a href="#">Δημιουργία νέου λογαριασμού</a>
+        </div>
+    </div>
+</body>
+</html>
