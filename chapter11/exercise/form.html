@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+<body>
+
+  <div class="border border-gray-200 mx-4 my-4 rounded-md">
+    <nav class="bg-white border-b border-gray-200 mx-3 my-2">
+    <div class="flex h-10 w-auto relative">
+      <div class="group relative">
+        <a href="javascript:void(0)" onclick="toggleForm('form-container')" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+          Πεδία Αίτησης
+        </a>
+        <span id="underline" class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-1000 
+                     group-hover:w-full">
+        </span>
+      </div>
+      <a href="#" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+        Ακαδημαϊκά Προσόντα </a>
+      <a href="#" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+        Διδακτική και Εργασιακή Εμπειρία </a>
+    </div>
+  </nav>
+
+  <div id="form-container" class="hidden mx-4 my-4 p-4">
+    
+    
+      <h3 class="text-md font-semibold mb-4">Προσωπικά Στοιχεία</h3>
+      <form>
+        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div class="sm:col-span-3">
+            <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+            <div class="mt-2">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+          </div>
+  
+          <div class="sm:col-span-3">
+            <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
+            <div class="mt-2">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+          </div>
+        </div>
+      
+      <div>
+          <hr class="w-full border border-gray-200"></hr>
+      </div>
+    </form>
+  </div>
+  
+  </div>
+
+  <script>
+    // Συνάρτηση για την εμφάνιση και απόκρυψη του εξωτερικού container με τη φόρμα
+    function toggleForm(formId) {
+      const formContainer = document.getElementById(formId);
+      const underline = document.getElementById('underline');
+      
+      // Ελέγχουμε αν το container είναι ήδη ορατό
+      if (formContainer.classList.contains('hidden')) {
+        formContainer.classList.remove('hidden'); // Αν είναι κρυφό, το κάνουμε ορατό
+        underline.classList.add('w-full'); // Κάνουμε τη μπλε γραμμή πλήρη
+        link.classList.add('text-blue-500'); // Ενεργοποιούμε το μπλε χρώμα του κειμένου
+      } else {
+        formContainer.classList.add('hidden'); // Αν είναι ορατό, το κρύβουμε
+        underline.classList.remove('w-full'); // Αφαιρούμε την πλήρη μπλε γραμμή
+        link.classList.remove('text-blue-500'); // Επαναφέρουμε το χρώμα του κειμένου
+      }
+    }
+  </script>
+
+  
+</body>
+</html>

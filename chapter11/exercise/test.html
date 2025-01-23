@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+<body>
+  <div class="border border-gray-200 mx-4 my-4 rounded-md">
+    <nav class="bg-white border-b border-gray-200 mx-3 my-2">
+      <div class="flex h-10 w-auto relative">
+        <!-- Πεδία Αίτησης με το onclick που καλεί τη συνάρτηση -->
+        <div class="group relative">
+          <a href="javascript:void(0)" onclick="toggleForm('form-container', 'request-link')" id="request-link" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+            Πεδία Αίτησης
+          </a>
+          <!-- Μπλε γραμμή που θα παραμένει ενεργή όταν η φόρμα είναι ανοιχτή -->
+          <span id="underline" class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-1000"></span>
+        </div>
+
+        <a href="#" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+          Ακαδημαϊκά Προσόντα
+        </a>
+        <a href="#" class="text-gray-500 hover:text-blue-400 px-3 py-2 text-md font-medium flex items-center">
+          Διδακτική και Εργασιακή Εμπειρία
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Εξωτερικό Container που περιλαμβάνει τη φόρμα -->
+  <div id="form-container" class="hidden mx-4 my-4 p-4 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold mb-4">Φόρμα Συμπλήρωσης</h3>
+    <form>
+      <div class="mb-4">
+        <label for="afm" class="block text-sm font-medium text-gray-700">ΑΦΜ</label>
+        <input type="text" id="afm" name="afm" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Όνομα</label>
+        <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="surname" class="block text-sm font-medium text-gray-700">Επίθετο</label>
+        <input type="text" id="surname" name="surname" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required />
+      </div>
+
+      <div class="mb-4">
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Υποβολή</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Συνάρτηση για την εμφάνιση και απόκρυψη του εξωτερικού container με τη φόρμα
+    function toggleForm(formId, linkId) {
+      const formContainer = document.getElementById(formId);
+      const link = document.getElementById(linkId);
+      const underline = document.getElementById('underline');
+      
+      // Ελέγχουμε αν το container είναι ήδη ορατό
+      if (formContainer.classList.contains('hidden')) {
+        formContainer.classList.remove('hidden'); // Αν είναι κρυφό, το κάνουμε ορατό
+        underline.classList.add('w-full'); // Κάνουμε τη μπλε γραμμή πλήρη
+        link.classList.add('text-blue-500'); // Ενεργοποιούμε το μπλε χρώμα του κειμένου
+      } else {
+        formContainer.classList.add('hidden'); // Αν είναι ορατό, το κρύβουμε
+        underline.classList.remove('w-full'); // Αφαιρούμε την πλήρη μπλε γραμμή
+        link.classList.remove('text-blue-500'); // Επαναφέρουμε το χρώμα του κειμένου
+      }
+    }
+  </script>
+</body>
+
+</html>
+

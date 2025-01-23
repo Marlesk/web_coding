@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Υποβολή Δήλωσης</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="d-flex flex-row align-center bg-gov-blue">
+        <div>
+            <img class="img-gov" src="../images/gov_gr-thumb-540.png" alt="Gov gr">
+        </div>
+        <nav class="mr-1">
+            <ul class="d-flex flex-row font-size-1 text-lightgrey-200">
+                <li class="list-style-none">
+                    <span class="border border-white border-radius-15 p-1">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </li>
+                <li class="list-style-none">
+                    <span class="mr-1">ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ</span>
+                    <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex flex-row">
+        <aside class="bg-gov-blue text-lightgrey-200 p-1">
+            <p class="mb-1 font-size-1">
+                <i class="fa-solid fa-house"></i>
+                <a class="text-white text-decoration-none" href="../index.html">Αρχική</a>
+            </p>
+            <p class="mb-1 font-size-1"> 
+                <i class="fa-solid fa-chevron-down"></i>
+                Δηλώσεις Καθαρισμού
+            </p>
+            <p class="mb-1 font-size-075 pl-1">
+                Προβολή Δηλώσεων
+            </p>
+            <p class="font-size-075 pl-1 text-yellow">
+                Υποβολή Δήλωσης
+            </p>
+        </aside>
+        <main>
+            <section class="p-1">
+                <h1 class="text-center font-size-2 mt-2 mb-2">Υποβολή Δήλωσης Καθαρισμού Οικοπέδου
+                </h1>
+                <div class="d-flex flex-row align-center">
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 m-auto" >1</span>
+                        </p>
+                        <p class="text-center">Στοιχεία Οικοπέδου</p>
+                    </div>
+                    <div class="bg-yellow flex-grow-1">
+                        <span class="stepper-border-bottom"></span>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 m-auto">2</span>
+                        </p>
+                        <p>Στοιχεία Ιδιοκτήτη</p>
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="stepper-border-bottom"></span>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 m-auto active">3</span>
+                        </p>
+                        <p>Ενέργειες Ιδιοκτήτη</p>
+                   </div>
+                </div>
+            </section>
+            <section class="p-1">
+                <h2 class="text-center font-size-2 mb-2 mt-2">Δήλωση εκτέλεσης απαιτούμενων ενεργειών </h2>
+                <p class="border border-lightgrey-300 bg-lightgrey-200 text-lightgrey-500 p-1">Παρακαλώ δηλώστε τις ενέργειες που εκτελέσατε.</p>
+                <form class="mt-2">
+                    <div class="mb-1"> 
+                        <span><strong>1) </strong>Υλοτομία και απομάκρυνση των ξερών και σπασμένων δέντρων και κλαδιών, καθώς και των κλαδιών που βρίσκονται σε άμεση επαφή με κτίσμα.
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="firstradio" id="yestrees" checked="checked">
+                        <label class="ml-05" for="yestrees">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="firstradio" id="notrees">
+                        <label class="ml-05" for="notrees">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments1" name="comments1"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+                    
+                    <div class="mb-1"> 
+                        <span><strong>2) </strong>Απομάκρυνση της καύσιμης φυτικής ύλης που βρίσκεται στην επιφάνει ατου εδάφους όπως ενδεικτικά το φυλλόστρωμα, τα ξερά κλαδιά, τα κατακείμενα ξερά κλαδιά και ξερά χόρτα.
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="secondradio" id="yesaway" checked="checked">
+                        <label class="ml-05" for="yesaway">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="secondradio" id="noaway">
+                        <label class="ml-05" for="noaway">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments2" name="comments2"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+
+                    <div class="mb-1"> 
+                        <span><strong>3) </strong>Αποκλάδωση της βάσης της κόμης των δέντρων και αύξηση του ύψους έναρξης της από την επιφάνεια του εδάφους, ανάλογα με την ηλικία και το είδος του δέντρου.     
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="thirdradio" id="yesage" checked="checked">
+                        <label class="ml-05" for="yesage">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="thirdradio" id="noage">
+                        <label class="ml-05" for="noage">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments3" name="comments3"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+
+                    <div class="mb-1"> 
+                        <span><strong>4) </strong>Αραίωση της θαμνώδους βλάστησης ως προς την κάλυψη του εδάφους.
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="fourthradio" id="yesground" checked="checked">
+                        <label class="ml-05" for="yesground">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="fourthradio" id="noground">
+                        <label class="ml-05" for="noground">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments4" name="comments4"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+
+                    <div class="mb-1"> 
+                        <span><strong>5) </strong>Απομάκρυνση τυχόν άλλων εγκαταλελειμμένων καυστών,
+                        αναφλέξιμων, εκρήξιμων ή εύφλεκτων υλικών αντικειμένων και απορριμμάτων. 
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="fiveradio" id="yesfire" checked="checked">
+                        <label class="ml-05" for="yesfire">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="fiveradio" id="nofire">
+                        <label class="ml-05" for="nofire">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments5" name="comments5"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+
+                    <div class="mb-1"> 
+                        <span><strong>6) </strong>Ασφαλή συλλογή, μεταφορά όλων των υπολειμμάτων καθαρισμού   
+                    </div>
+                    <div class="mb-1">
+                        <input class="ml-1" type="radio" name="sixradio" id="yescollect" checked="checked">
+                        <label class="ml-05" for="yescollect">ΝΑΙ</label>
+                        <input class="ml-1" type="radio" name="sixradio" id="nocollect">
+                        <label class="ml-05" for="nocollect">ΟΧΙ / ΔΕΝ ΑΠΑΙΤΕΙΤΑΙ</label>
+                    </div>
+                    <div class="border-radius-8">
+                        <textarea id="comments6" name="comments6"  class="pl-1 col-12 h-6 pt-1 font-size-1 text-family" placeholder="Παρατηρήσεις"></textarea>
+                    </div>
+                    <div class="d-flex flex-row justify-end">
+                        <span class="text-lightgrey-500 font-size-075">0 / 2000</span>
+                    </div> 
+                    <div class="flex-grow-1 mt-1 mb-2">
+                        <span class="stepper-border-bottom">
+                        </span>
+                    </div> 
+
+                    <div>
+                        <input type="checkbox"> 
+                        <span class="ml-05" >Δηλώνω υπεύθυνα ότι για το τρέχον έτος προέβην στις κάτωθι ενέργειες για τον καθαρισμό του οικοπέδου </span>
+                    </div>
+
+                    <div class="d-flex flex-row mb-2 mt-2">
+                        <div>
+                            <a class="bg-green p-1 text-white text-decoration-none" href="./form2.html">
+                                <span><i class="fa-solid fa-less-than"></i></span>
+                                Πίσω                            
+                            </a>
+                        </div>
+                        <div>
+                            <a class="bg-green text-white p-1 text-decoration-none" href=" ">
+                                <span><i class="fa-solid fa-floppy-disk"></i>
+                                Υποβολή
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        </main>
+
+        <footer class="bg-lightgrey-300">
+            <div class="p-2">
+                 <p class="mb-2"><a href="">Όροι και Πρυποθέσεις</a></p>
+                 <p>Υλοποίηση για το <a href="">Υπουργείο Ψηφιακής ΔΙακυβέρνησης</a> </p>
+            </div> 
+            <div class="p-2">
+                 <img src="../images/government-logo2.svg" alt="GR Logo">
+            </div>
+         </footer>
+</body>
+</html>
